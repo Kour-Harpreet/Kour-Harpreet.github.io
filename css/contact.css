@@ -1,0 +1,65 @@
+body {
+    display: grid;
+    grid-template-areas: ". header ." ". main .";
+    grid-template-columns: 1fr 9fr 1fr;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+    background-color: #81989A;
+}
+
+.form {
+    display: grid;
+    grid-template-areas: ". from .";
+    grid-template-columns: 1fr 9fr 1fr;
+    padding: 10px;
+}
+
+input, textarea {
+    margin: 8px 3px;
+    background-color: #f5f7f6;
+    border: none;
+}
+
+#myButton {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 20px 3px;
+    border: none;
+    padding: 6%;
+}
+
+#myButton:hover, #myButton:focus {
+    background: #3E0E24;
+    outline: 0;
+}
+
+@media (min-width: 500px) {
+    body {
+        display: grid;
+        grid-template-areas: ". header ." ". main .";
+        grid-template-columns: 3fr 5fr 3fr;
+    }
+    label {
+        padding: 20px;
+    }
+    input, textarea {
+        margin: 8px 3px;
+        border: none;
+    }
+    #myButton {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        margin: 20px 3px;
+        border: none;
+        padding: 3%;
+    }
+    .form {
+        padding: 30px;
+    }
+}

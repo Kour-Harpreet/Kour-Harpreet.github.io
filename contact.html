@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <meta name="description" content="A resume website with contact form.">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Harpreet Kour">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <script src="js/scripts.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Contact Form</h1>
+  </header>
+  <main>
+    <form class="form" action="mailto:kourh0316@gmail.com" method="get" enctype="text/plain">
+
+      <label for="senderEmail">From</label>
+      <input id="senderEmail" type="text" name="senderEmail"> <br />
+      <label for="email">To</label>
+      <input id="email" type="text" name="email" value="kourh0316@gmail.com"> <br />
+      <!-- <label for="cC">CC</label>
+      <input id="cC" type="text" name="cC"> <br />
+      <label for="bCC">BCC</label>
+      <input id="bCC" type="text" name="bCC"> <br /> -->
+      <label for="subject">Subject</label>
+      <input id="subject" type="text" name="subject"><br />
+      <label for="body">Body</label>
+      <textarea rows="8" id="body" name="body"></textarea><br />
+      <button id="myButton" type="submit">Send </button>
+
+    </form>
+  </main>
+</body>
+
+</html>
